@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="show_hide.js"></script>
+	<title>Show and Hide with JQuery</title>
+</head>
+<body>
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="http://www.github.com/pawel2105/index.html">Link to Github</a></h1>
+			<h2 class="section_title">Hide &amp; Show in JavaScript</h2>
+		</hgroup>
+	</header> <!-- end of header bar -->
+	
+	<section id="secondary_bar">
+		<div class="user">
+			<p>Quirky side navigation</p>
+		</div>
+
+	</section><!-- end of secondary bar -->
+	
+	<aside id="sidebar" class="column">
+		
+		<h3>Intel</h3>
+		<ul class="toggle">
+			<li class="icn" id="icn_1"><a href="#">JavaScript</a></li>
+			<li class="icn" id="icn_2"><a href="#">Stylesheet</a></li>
+			<li class="icn" id="icn_3"><a href="#">Licensing</a></li>
+			<li class="icn" id="icn_4"><a href="#">Questions</a></li>
+		</ul>
+		<h3>Species</h3>
+		<ul class="toggle">
+			<li class="icn" id="icn_5"><a href="#">Human</a></li>
+			<li class="icn" id="icn_6"><a href="#">Alien</a></li>
+			<li class="icn" id="icn_7"><a href="#">Predator</a></li>
+		</ul>
+		<h3>Weapons</h3>
+		<ul class="toggle">
+			<li class="icn" id="icn_8"><a href="#">BFG9000</a></li>
+		</ul>
+		
+		<footer>
+			<hr />
+			<p><strong>Made by Pawel Janiak</strong></p>
+		</footer>
+	</aside><!-- end of sidebar -->
+	
+	<section id="main" class="column">
+	
+	<h4 id="flash_notice" class="hidables">Click on any of the navigation links on the left</h4>
+		
+		<section id="section_1" class="hidables">
+		<article class="module width_full">
+			<header><h3>The hide and show code</h3></header>
+				<div class="module_content">
+					<h1>A quick run-through</h1>
+					<p>This is just a quick little script that hides all content on page load and then individually displays them as you click on the navigation list items. All content that you want to hide should belong to the <i>hidables</i> class. The section id must be <i>section_</i> followed by a sequential number that matches the id number of the list item in the navigation, which looks like <i>id="icn_[number]"</i></p>
+					<p>You can take a look at the <i>show_hide.js</i> file to see what's going on, and you also need Jquery.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<section id="section_2" class="hidables">
+		<article class="module width_full">
+			<header><h3>This stylesheet</h3></header>
+				<div class="module_content">
+					<h1>Credits</h1>
+					<p>I didn't write the stylesheet from scratch. It's from <a href="http://medialoot.com/item/html5-admin-template/">Media Loot</a>.</p>
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		</article><!-- end of content manager article -->
+		
+		<section id="section_3" class="hidables">
+		<article class="module width_full">
+			<header><h3>Can you use this?</h3></header>
+				<div class="module_content">
+					<h1>Of course</h1>
+					<p>It's just a few lines of code, but even if it were 1,000 you could use it all for free without any licenses anyway.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<div class="clear"></div>
+
+		<section id="section_4" class="hidables">
+		<article class="module width_full">
+			<header><h3>Questions</h3></header>
+				<div class="module_content">
+					<h1>Are you stuck?</h1>
+					<p>If you are struggling to implement this, I suggest that you take up the free JavaScript course at <a href="http://www.codecademy.com/">Codecademy</a>.</p>
+
+<p>If you'd really just like to implement this and don't want to spend a few hours learning the ins and outs (tsk tsk) then contact me or ask anyone in the #jquery freenode channel.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<section id="section_5" class="hidables">
+		<article class="module width_full">
+			<header><h3>Species</h3></header>
+				<div class="module_content">
+					<h1>Human</h1>
+					<p>I am a human. This code is not. I made this repo just in case someone else finds it useful. I doubt it. It's really simple.</p>
+
+<p>I reiterate that I'm human. If the way that things have been done here is not optimum, fork and do a pull request or just shout at me.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<section id="section_6" class="hidables">
+		<article class="module width_full">
+			<header><h3>Species</h3></header>
+				<div class="module_content">
+					<h1>Alien</h1>
+					<p>You may be an alien if you are living in a country and don't have a passport.</p>
+
+<p>You're probably an alien to extra-terrestrial beings. We all are, much like they're aliens to us.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<section id="section_7" class="hidables">
+		<article class="module width_full">
+			<header><h3>Species</h3></header>
+				<div class="module_content">
+					<h1>Predator</h1>
+					<p>Most of us eat meat, but that doesn't make us predators. Just carnivores.</p>
+
+<p>Bear Grylls and Mark Zuckerberg are predators.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<section id="section_8" class="hidables">
+		<article class="module width_full">
+			<header><h3>Weapons</h3></header>
+				<div class="module_content">
+					<h1>BFG9000</h1>
+					<p>If you've ever played Duke Nukem, you'll know this is an awesome gun.</p>
+
+<p>It's time to kick ass and chew bubble gum, and I'm all out of gum.</p>
+
+				</div>
+		</article><!-- end of styles article -->
+		</section>
+		
+		<div class="spacer"></div>
+	</section>
+</body>
+
+</html>
